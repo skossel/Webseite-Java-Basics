@@ -12,88 +12,8 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <style>
-        body {
-            font-family: 'Playfair Display', serif;
-            background-color: rgba(102, 0, 255, 0.128);
-            padding-left: 100px;
-            padding-right: 100px;
-        }
+    <link rel="stylesheet" href="styleStartseite.css">
 
-        .header-image {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            object-position: 20% 20%;
-            display: block;
-
-        }
-
-
-        .headline {
-            color: #f58218;
-        }
-
-        .image-container {
-            background-color: white;
-            padding: 16px;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        a {
-            color: #f58218;
-            text-decoration: none;
-            margin-left: 16px;
-            font-weight: 700;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .text-highlight {
-            color: #4d9078;
-            font-size: 48px;
-        }
-
-        .caption {
-            background-color: #f5f5dc;
-            padding: 8px;
-            color: #4d9078;
-            font-weight: 600;
-        }
-
-        .maps-container {
-            margin-top: 16px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .maps-right {
-            margin-left: 16px;
-            width: 30%;
-        }
-
-        .maps-frame {
-            border: 0;
-            height: 350px;
-            width: 70%;
-        }
-
-        .legal-content {
-            padding: 8px;
-
-        }
-
-        .legal-text {
-           margin-right: 16px; 
-        }
-    </style>
 </head>
 
 <body>
@@ -101,11 +21,11 @@
     <div class="navbar">
         <h1 class="headline">Java Basics <span class="text-highlight">für Anfänger</span></h1>
         <div>
-            <a href="https://learngitbranching.js.org/?locale=de_DE">Git learning</a>
-            <a href="https://learngitbranching.js.org/?locale=de_DE">Preis</a>
-            <a href="https://learngitbranching.js.org/?locale=de_DE">Arrays</a>
-            <a href="https://learngitbranching.js.org/?locale=de_DE">Funktionen</a>
-            <a href="#">Klassen</a>
+            <a href="https://learngitbranching.js.org/?locale=de_DE" class="linkZuInhaltsverzeichnis">Git learning</a>
+            <a href="https://learngitbranching.js.org/?locale=de_DE" class="linkZuInhaltsverzeichnis">Preis</a>
+            <a href="https://learngitbranching.js.org/?locale=de_DE" class="linkZuInhaltsverzeichnis">Arrays</a>
+            <a href="https://learngitbranching.js.org/?locale=de_DE" class="linkZuInhaltsverzeichnis">Funktionen</a>
+            <a href="#" class="linkZuInhaltsverzeichnis">Klassen</a>
         </div>
     </div>
 
@@ -131,7 +51,7 @@
 
 
     <div class="legal-content">
-        <span class="legal-text">(c) 2023 - Java (company AG)</span> | <a href="#">Impressum</a> | <a href="#"></a> | <a href="#">Datenschutz</a>
+        <span class="footer">(c) 2023 - Java (company AG)</span> | <a href="#" class="footer">Impressum</a> | <a href="#" class="footer"></a> | <a href="#" class="footer">Datenschutz</a>
     </div>
 
 </body>
