@@ -7,7 +7,7 @@ body {
 
 .header-image {
     width: 40%;
-    height: 500px;
+    height: 40;;
     object-fit: cover;
 }
 .header{
@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .headline {
     color: #F5F5DC;
 }
@@ -29,15 +30,7 @@ body {
 
 }
 
-.header {
-    background-color: #4D9078;
-    color: #F5F5DC;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .linkZuInhaltsverzeichnis {
     color: #F5F5DC;
