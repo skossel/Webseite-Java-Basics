@@ -26,9 +26,42 @@
     <h4>If-Verzweigungen</h4>
     Wenn die Bedingung bei if "true" ist, wird der Codeblock im "if" ausgeführt, sonst wird er <br>
     übersprungen. Wenn es eine else if Anweisung gibt, wird als nächstes überprüft, ob diese "true" ist, <br>
-    wenn nicht wir der Code darin ebenfalls übersprungen. Wenn am Ende else steht, wird der Codeblock <br>
+    wenn nicht wird der Code darin ebenfalls übersprungen. Wenn am Ende else steht, wird der Codeblock <br>
     darin nur ausgeführt, wenn alle if und else if Bedingungen davor "false" waren.
+    <pre>
+        <code>
+            if (userInput > counter) {
+                System.out.println("Der userInput ist grösser als der counter");
+            } else-if (userInput == counter) {
+                System.out.println("Der userInput ist gleich gross wie der counter");
+            } else {
+                System.out.println("Der userInput ist kleiner als der counter");
+            }
+        </code>
+    </pre>
+    In diesem Codeabschnitt wird abgefragt, ob der userInput grösser als der counter ist. Wenn dies <br>
+    der Fall ist wird "Der userInput ist grösser als der counter" in der Konsole ausgegeben. Falls <br>
+    der userInput gleich gross wie der counter ist, wird "Der userInput ist gleich gross wie der <br>
+    counter" ausgegeben. Wenn nicht, wird "Der userInput ist kleiner als der counter" ausgegeben.
+
     <h4>Switch-Verzweigungen</h4>
+    Das Schlüsselwort switch kann hierbei etwa mit "für den Fall, dass " übersetzt werden. <br>
+    Übersetzt man das Schlüsselwort case mit "entspricht", dann ergibt sich für die Schreibweise <br>
+    switch-case Anweisung folgende Bedeutung: Für den Fall, dass der in Klammern stehende Ausdruck <br>
+    der Konstante 1 entspricht, so sind die hinter dem Doppelpunkt stehenden Anweisungen bis zur <br>
+    nächsten break-Anweisung auszuführen. Default kann mit einem else gleichgesetzt werden.
+    <pre>
+        <code>
+            switch (Ausdruck) {
+                case Konstante 1:
+                    Anweisung;
+                case Konstante 1:
+                    Anweisung;
+                default:
+                    Anweisung;
+            }
+        </code>
+    </pre>
 
 </div>
 <div class="footer">
