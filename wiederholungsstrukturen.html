@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>wiederholungsstrukturen</title>
   <link rel="stylesheet" href="styleUnterseiten.css">
+  <link rel="icon" type="image/png" href="Pictures/javaLogo.png">
 </head>
 <body>
 <div class="header">
@@ -19,66 +20,62 @@
   <h2>Was sind Wiederholungsstrukturen?</h2>
   <h3>Zu den Wiederholungsstrukturen gehören:</h3>
   <ul>
-    <li>for loop</li>
-    <li>while loop</li>
-    <li>do while loop</li>
+    <li>For Loop</li>
+    <li>While Loop</li>
+    <li>Do while Loop</li>
   </ul>
   <h3>Wann sollte welche Schleife verwendet werden?</h3>
-  hier weiterarbeiten!!!!! <br>
-
-  <br>
-  <table class="table">
-    <tr>
-      <th class="tg-031e"><h4>Datentyp</h4></th>
-      <th class="tg-031e"><h4>Wertebereich</h4></th>
-    </tr>
-    <tr>
-      <td class="tg-031e">int<br></td>
-      <td class="tg-031e">−2.147.483.648 - 2.147.483.647</td>
-    </tr>
-    <tr>
-      <td class="tg-031e">byte</td>
-      <td class="tg-031e">−128 - 127</td>
-    </tr>
-    <tr>
-      <td class="tg-031e">short</td>
-      <td class="tg-031e">−32.768 - 32.767</td>
-    </tr>
-    <tr>
-      <td class="tg-031e">long</td>
-      <td class="tg-031e">−9.223.372.036.854.775.808 - 9.223.372.036.854.775.807</td>
-    </tr>
-    <tr>
-      <td class="tg-031e">float</td>
-      <td class="tg-031e">±1,4E−45 - ±3,4E+38</td>
-    </tr>
-    <tr>
-      <td class="tg-031e">double</td>
-      <td class="tg-031e">±4,9E−324 - ±1,7E+308</td>
-    </tr>
-    <tr>
-      <td class="tg-031e">char<br></td>
-      <td class="tg-031e">Ein einzelnes Zeichen<br></td>
-    </tr>
-    <tr>
-      <td class="tg-031e">boolean</td>
-      <td class="tg-031e">true oder false</td>
-    </tr>
-  </table>
-  <h3>Wie werden die Datentypen definiert und deklariert?</h3>
+  <h4>Normale Schleifen</h4>
+  Wenn man weiss wie oft etwas ausgeführt werden soll, sollte man einen For-Loop verwenden, wenn <br>
+  man nicht weiss wie oft es ausgeführt werden soll benutzt man entweder einen While-Loop oder eine <br>
+  oder einen Do-while-Loop. Do-while benutzt man, wenn der Codeblock in der Schleife immer mindestens <br>
+  einmal ausgeführt werden soll, auch wenn die Bedingung der Schleife nicht zutrifft. While benutzt <br>
+  man, wenn der Inhalt der Schleife nur ausgeführt werden soll, wenn die Bedingung zutrifft.<br>
+  <h4>Endlosschleifen</h4>
+  Wenn man "true" in die Bedingung der While-Schleife schreibt, hat man eine Endlosschleife
+  <h4>Schleifen abbrechen</h4>
+  Mit "break" kann man eine Schleife sofort beenden. Der Code unter der Schleife wird normal ausgeführt.
+  <h3>Wie werden Schleifen geschrieben?</h3>
+  <h4>For-Loop</h4>
   <pre>
-        <code>
-                int variableInt = 230; <br>
-                byte variableByte = -122;<br>
-                short variableShort = 2700;<br>
-                long variableLong = 354389548;<br>
-                float variableFloat = 443.12f;<br>
-                double variableDouble = 24321.43214;<br>
-                char variableChar = 'a';<br>
-                boolean variableBoolean = true;
-        </code>
-    </pre>
-
+    <code>
+      for (int i = 0; i < 5; i++) {
+            doSomething();
+        }
+    </code>
+  </pre>
+  In dieser Schleife wird "doSomething" fünfmal aufgerufen.
+  <h4>While-Loop</h4>
+  <pre>
+    <code>
+      while (!Objects.equals(string1, string2)){
+            doSomething();
+        }
+    </code>
+  </pre>
+  In dieser Schleife wir "doSomething" solange aufgerufen, bis "string1" gleich "string2" ist.
+  <h4>Do-while-Loop</h4>
+  <pre>
+    <code>
+      do {
+            doSomething();
+        } while (number1 + number2 != 25);
+    </code>
+  </pre>
+  Hier wird "doSomething" immer mindestens einmal aufgerufen, auch wenn "number1" plus "number2" nicht 25 ergibt.
+  <h4>Endlosschleife</h4>
+  <pre>
+    <code>
+      while (true){
+            doSomething();
+            if (String.valueOf(number1).equals(string1)){
+                break;
+            }
+            doSomething();
+        }
+    </code>
+  </pre>
+  Diese Schleife wird erst abgebrochen, wenn "number1" gleich "string1" ist und sonst unendlich oft ausgeführt.<br><br>
 </div>
 <div class="footer">
   <h2><a href="index.html">Startseite</a></h2>

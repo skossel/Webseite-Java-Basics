@@ -41,9 +41,8 @@ button {
 
 .inhalt {
     color: #4D9078;
-    width: 200%;
-    height: 200%;
     font-size: 150%;
+    padding-left: 20px;
 }
 
 .table {
