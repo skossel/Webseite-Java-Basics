@@ -45,6 +45,7 @@ button {
     font-size: 150%;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 670px
 }
 
 a {
